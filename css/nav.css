@@ -2,13 +2,34 @@
     background-color: var(--main-white);
 }
 
-.nav__item {
-    background-color: var(--main-white);
+.nav__container {
+    background-color: var(--main-white-t);
 }
 
 .nav__item a {
     color: var(--dark-blue);
 }
+
+@media screen
+and (min-width: 600px) {
+
+    .nav {
+        background-color: var(--main-white-t);
+    }
+
+    .nav__item a {
+        background-color: var(--dark-blue);
+        color: var(--main-white);
+    }
+
+}
+
+
+
+
+
+
+
 
 .nav__container {
     display: flex;
@@ -18,6 +39,27 @@
     align-items: center;
 
     position: relative;
+
+    display: none;
+}
+
+.nav__wrapper {
+    position: relative;
+}
+
+.nav__container {
+    position: absolute;
+
+    width: 100%;
+}
+
+.nav-menu {
+    font-size: 2rem;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
 
 .nav__item {
@@ -29,11 +71,6 @@
     justify-content: center;
 }
 
-.nav__item:not(:nth-of-type(1)) {
-    display: none;
-
-    position: absolute;
-}
 
 #nav-menu__decoration {
     transform: rotate(90deg);
@@ -68,7 +105,54 @@ and (min-width: 400px) {
 
 @media screen
 and (min-width: 600px) {
-    
+
+    .nav {
+        position: absolute;
+        top: 70px;
+
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav__wrapper {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav__container {
+        all: unset;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        height: 8rem;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .nav__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav__item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: .5rem 1rem;
+
+        border-radius: .5rem;
+    }
 }
 
 
@@ -76,6 +160,10 @@ and (min-width: 600px) {
 @media screen
 and (min-width: 900px) {
     
+    .nav {
+        top: 90.7px;
+    }
+
 }
 
 
@@ -83,11 +171,6 @@ and (min-width: 900px) {
 @media screen
 and (min-width: 1500px) {
     
-    .nav {
-        position: sticky;
-        top: 90.7px;
-    }
-
 }
 
 

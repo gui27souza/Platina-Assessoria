@@ -130,6 +130,11 @@ and (min-width: 400px) {
 
 @media screen
 and (min-width: 600px) {
+
+    .header {
+        position: sticky;
+        top: 0;
+    }
     
     .header__wrapper {
         flex-flow: row;
@@ -162,13 +167,6 @@ and (min-width: 600px) {
 
 @media screen
 and (min-width: 900px) {
-
-    .header {
-        position: sticky;
-        top: 0;
-
-        height: 9.1rem;
-    }
 
     .header__logo {
         max-width: 35rem;

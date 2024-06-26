@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
 </head>
 <body>
     
-    <header class="header">
+    <header class="header" id="header">
 
         <div class="header__wrapper max-width">
 
@@ -61,15 +62,15 @@
     </header>
 
 
-    <nav class="nav">
+    <nav class="nav" id="nav">
 
         <div class="nav__wrapper">
 
-            <div class="nav__container">
+            <div class="nav-menu" id="nav-menu" onclick="nav()">
+                <span>Menu</span><span id="nav-menu__decoration">III</span>
+            </div>
 
-                <div class="nav__item" id="nav-menu" onclick="nav()">
-                    <a href="#">Menu</a><span id="nav-menu__decoration">III</span>
-                </div>
+            <div class="nav__container" id="nav-container">                
 
                 <div class="nav__item">
                     <a href="#">item2</a>
@@ -99,7 +100,11 @@
     </nav>
 
 
-    <section class="hero">
+    <section class="hero" id="hero">
+
+        <h1 class="hero__title">
+            Lorem, ipsum dolor <span>et Amet.</span>
+        </h1>
 
     </section>
 
@@ -120,6 +125,8 @@
         }
 
     </script>
+
     <script src="js/nav.js"></script>
+    <script src="js/hero.js"></script>
 </body>
 </html>
