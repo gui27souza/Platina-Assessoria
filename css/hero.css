@@ -1,5 +1,5 @@
 .hero-content {
-    background-color: var(--light-white);
+    background-image: linear-gradient(var(--main-white), 80%, white);
 }
 
 .hero-content__title {
@@ -20,7 +20,7 @@
 @media screen
 and (min-width: 900px) {
     .hero-content {
-        background-color: unset;
+        background-image: unset;
     }
 
     .hero-content__title {
@@ -180,6 +180,14 @@ and (min-width: 900px) {
     }
     
 }
+
+
+
+@media screen
+and (min-width: 1200px) {
+
+}
+
 
 
 

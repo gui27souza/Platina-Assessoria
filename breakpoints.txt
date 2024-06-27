@@ -1,10 +1,11 @@
-xsm     - 0
-sm      - 300
-m       - 400
-l       - 600
-xl      - 900
-xxl     - 1500
-desktop - 1800
+xsm         - 0
+sm          - 300
+m           - 400
+l           - 600
+xl          - 900
+xxl         - 1200
+sm-desktop  - 1500
+desktop     - 1800
 
 
 
@@ -12,6 +13,8 @@ desktop - 1800
 @media screen
 and (min-width: 300px) {
     
+
+
 }
 
 
@@ -19,6 +22,8 @@ and (min-width: 300px) {
 @media screen
 and (min-width: 400px) {
     
+
+
 }
 
 
@@ -26,6 +31,8 @@ and (min-width: 400px) {
 @media screen
 and (min-width: 600px) {
     
+
+
 }
 
 
@@ -33,6 +40,17 @@ and (min-width: 600px) {
 @media screen
 and (min-width: 900px) {
     
+
+
+}
+
+
+
+@media screen
+and (min-width: 1200px) {
+    
+
+
 }
 
 
@@ -40,6 +58,8 @@ and (min-width: 900px) {
 @media screen
 and (min-width: 1500px) {
     
+    
+
 }
 
 
@@ -47,4 +67,6 @@ and (min-width: 1500px) {
 @media screen
 and (min-width: 1800px) {
     
+
+
 }
