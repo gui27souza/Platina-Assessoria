@@ -1,1 +1,2 @@
-- finish menu in smaller screens
+- criar logo
+- tornar nav sticky

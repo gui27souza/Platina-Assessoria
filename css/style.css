@@ -20,3 +20,11 @@
     width: 100%;
     max-width: 1800px;
 }
+
+.section__hr {
+    width: calc(100% - 2*var(--section-padding));
+    height: 1px;
+    margin: auto;
+    border: none;
+    background-color: black;
+}
