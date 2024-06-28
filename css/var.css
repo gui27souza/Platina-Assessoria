@@ -6,7 +6,7 @@
     --inner-gap: 1.2rem;
 
     --h1-font-size: 1.7rem;
-    --h2-font-size: ;
+    --h2-font-size: 1.6rem;
     --p-font-size: 1.4rem;
 
     --rotate: -90deg;
@@ -20,7 +20,7 @@ and (min-width: 300px) {
         --section-padding: 2rem;
 
         --h1-font-size: 2.2rem;
-        --h2-font-size: ;
+        --h2-font-size: 1.8rem;
         --p-font-size: 1.8rem;
     }
 
@@ -34,7 +34,8 @@ and (min-width: 400px) {
     :root {
         --section-padding: 4rem;
 
-        --h2-font-size: ;
+        --h1-font-size: calc(2.2rem + .5*1vw);
+        --h2-font-size: calc(1.8rem + 1.1*1vw);
         --p-font-size: calc(1.8rem + .8*1vw);
     }
 
@@ -47,7 +48,7 @@ and (min-width: 600px) {
     
     :root {
         --h1-font-size: 3rem;
-        --h2-font-size: ;
+        --h2-font-size: calc(1.4rem + 1.2vw);
         --p-font-size: calc(1.2rem + 1.2vw);
     }
 
@@ -60,6 +61,7 @@ and (min-width: 900px) {
     
     :root {
         --h1-font-size: 3.6rem;
+        --h2-font-size: 3.4rem;
     }
 
 }
@@ -72,7 +74,6 @@ and (min-width: 1200px) {
     :root {
         --section-padding: 6rem;
 
-        --h2-font-size: ;
         --p-font-size: calc(1.8rem + 1vw);
     }
 
@@ -84,7 +85,6 @@ and (min-width: 1200px) {
 and (min-width: 1500px) {
     
     :root {
-        --h2-font-size: ;
         --p-font-size: calc(2.2rem + .5vw);
     }    
 

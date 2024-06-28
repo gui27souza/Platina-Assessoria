@@ -1,3 +1,5 @@
 - criar logo
 
 - criar botão para voltar ao topo
+
+- limpar arquivos css
