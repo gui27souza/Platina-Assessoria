@@ -113,7 +113,6 @@ and (min-width: 400px) {
 
     .header__tel__span {
         font-size: 2.4rem;
-        font-weight: 400;
     }
 
     .header__link {
