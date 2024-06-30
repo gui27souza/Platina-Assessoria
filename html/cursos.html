@@ -18,18 +18,19 @@
     <link rel="stylesheet" href="../css/section css/nav.css">
     <link rel="stylesheet" href="../css/section css/hero.css">
     <link rel="stylesheet" href="../css/section css/sobre_financas.css">
+    <link rel="stylesheet" href="../css/section css/footer.css">
 </head>
 <body>
 
     <div class="topo" id="topo" onclick="window.scrollTo(0, 0)"></div>
     <span class="topo__text">Voltar ao topo</span>
-    <div class="topo__hide"></div>
+    <!-- <div class="topo__hide"></div> -->
     
     <header class="header" id="header">
 
         <div class="header__wrapper">
 
-            <img src="../media/svg/brand/logo.svg" alt="logo de Platina Assessoria" class="header__logo" onclick="openLink('index.html', 0)">
+            <img src="../media/svg/brand/logo.svg" alt="logo de Platina Assessoria" class="header__logo" onclick="openLink('../index.html', 0)">
 
             <div class="header__tel">
                 <span class="header__tel__span">
@@ -88,14 +89,14 @@
                 </div>
 
                 <div class="nav__item" onclick="nav()">
-                    <a href="#sobre-financas">Finanças</a>
+                    <a href="#">item2</a>
                 </div>
 
                 <div class="nav__item" onclick="nav()">
-                    <a href="#sobre">Sobre</a>
+                    <a href="#">item3</a>
                 </div>
 
-                <div class="nav__item">
+                <div class="nav__item" onclick="nav()">
                     <a href="#">item4</a>
                 </div>
 
@@ -176,6 +177,11 @@
     </section>
 
 
+    <footer class="footer">
+        <span>All rights reserved to 272727@</span>
+    </footer>
+
+
     <script>
 
         // Função que auxilia a navegação
@@ -191,6 +197,5 @@
 
     <script src="../js/nav.js"></script>
     <script src="../js/hero.js"></script>
-    <script src="../js/sobre.js"></script>
 </body>
 </html>

@@ -95,18 +95,6 @@ and (min-width: 1200px) {
         --topo-distance: 3.4rem;
     }
 
-}
-
-
-
-@media screen
-and (min-width: 1500px) {
-    
-    :root {
-        --topo-size: 4.8rem;
-        --topo-distance: 3.6rem;
-    }    
-
     .topo {
         transition: transform .4s ease;
         overflow: visible;
@@ -122,7 +110,7 @@ and (min-width: 1500px) {
 
         clip-path: polygon(calc(var(--topo-size) / 2) 0%, 100% 0, 100% 100%, 0 100%, 0 50%);
         
-        font-size: 2rem;
+        font-size: 1.8rem;
 
         display: flex;
         align-items: center;
@@ -155,4 +143,20 @@ and (min-width: 1500px) {
         bottom: var(--topo-distance);
         right: 0;
     }
+}
+
+
+
+@media screen
+and (min-width: 1500px) {
+    
+    :root {
+        --topo-size: 4.8rem;
+        --topo-distance: 3.6rem;
+    }    
+
+    .topo__text {
+        font-size: 2rem;
+    }
+
 }

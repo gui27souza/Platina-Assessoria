@@ -5,6 +5,10 @@
     padding: var(--section-padding);
 
     gap: var(--section-gap);
+
+    overflow: hidden;
+
+    transition: height 1s ease;
 }
 
 .sobre__title{
@@ -54,8 +58,6 @@
     gap: var(--inner-gap);
 
     position: relative;
-
-    display: none;
 }
 
 .sobre__text__p{
@@ -149,6 +151,8 @@ and (min-width: 900px) {
     .sobre {
         grid-template-rows: 5rem 1fr;
         grid-template-columns: 35% 1fr;
+
+        height: unset;
     }
     
     .sobre__img{

@@ -36,8 +36,6 @@ for (let i = 0; i < all_nav_items.length; i++) {
     contador++
 }
 
-console.log(contador)
-
 if (window.innerWidth >= 600) {
     menu.style.gridTemplateColumns = `repeat(${contador}, 1fr)`
 }
