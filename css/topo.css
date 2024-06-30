@@ -1,0 +1,158 @@
+:root {
+    --topo-size: 3rem;
+    --topo-distance: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.topo {
+    background-color: var(--main-blue);
+
+    clip-path: polygon(40% 0, 100% 0, 100% 60%, 60% 100%, 0 100%, 0 40%);
+
+    height: var(--topo-size);
+    width: var(--topo-size);
+
+    position: fixed;
+    right: var(--topo-distance);
+    bottom: var(--topo-distance);
+
+    z-index: 1;
+}
+
+.topo::before {
+    content: "";
+    height: calc(var(--topo-size) / 2);
+    width: calc(var(--topo-size) / 2);
+
+    background-color: var(--main-white);
+
+    clip-path: polygon(50% 25%, 100% 50%, 100% 75%, 50% 50%, 0 75%, 0 50%);
+    position: absolute;
+    top: calc(var(--topo-size) / 4);
+    left: calc(var(--topo-size) / 4);
+}
+
+.topo__text {
+    display: none;
+}
+
+@media screen
+and (min-width: 300px) {
+    
+    :root {
+        --topo-size: 3.6rem;
+        --topo-distance: 2.4rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 400px) {
+    
+    :root {
+        --topo-size: 4rem;
+        --topo-distance: 2.6rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 600px) {
+    
+    :root {
+        --topo-size: 4.2rem;
+        --topo-distance: 3rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 900px) {
+    
+    :root {
+        --topo-size: 4.4rem;
+        --topo-distance: 3.2rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1200px) {
+    
+    :root {
+        --topo-size: 4.6rem;
+        --topo-distance: 3.4rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1500px) {
+    
+    :root {
+        --topo-size: 4.8rem;
+        --topo-distance: 3.6rem;
+    }    
+
+    .topo {
+        transition: transform .4s ease;
+        overflow: visible;
+    }
+
+    .topo:hover {
+        transform: rotate(360deg);
+    }
+
+    .topo__text {
+        color: var(--main-white);
+        background-color: var(--main-blue);
+
+        clip-path: polygon(calc(var(--topo-size) / 2) 0%, 100% 0, 100% 100%, 0 100%, 0 50%);
+        
+        font-size: 2rem;
+
+        display: flex;
+        align-items: center;
+
+        height: var(--topo-size);
+        width: calc(12rem + var(--topo-size));
+
+        padding: 0 2rem;
+
+        position: fixed;
+        bottom: var(--topo-distance);
+        right: -50rem;
+
+        transition: right .6s ease;
+    }
+
+    .topo:hover ~ .topo__text {
+        right: calc(var(--topo-distance) + var(--topo-size) - 2rem);
+    }
+
+    .topo__hide {
+        display: block;
+
+        background-color: white;
+
+        height: var(--topo-size);
+        width: 6rem;
+
+        position: fixed;
+        bottom: var(--topo-distance);
+        right: 0;
+    }
+}

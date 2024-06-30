@@ -34,10 +34,10 @@ and (min-width: 600px) {
 
 
 .nav {
-    z-index: 4;
-
     position: sticky;
     top: 0;
+
+    z-index: 2;
 }
 
 .nav__container {
@@ -50,7 +50,6 @@ and (min-width: 600px) {
     position: relative;
 
     display: none;
-    z-index: 4;
 }
 
 .nav__wrapper {

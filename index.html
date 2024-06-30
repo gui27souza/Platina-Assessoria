@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/var.css">
+
+    <link rel="stylesheet" href="css/topo.css">
+
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -19,10 +22,9 @@
 </head>
 <body>
     
-
     <header class="header" id="header">
 
-        <div class="header__wrapper max-width">
+        <div class="header__wrapper">
 
             <img src="media/svg/brand/logo.svg" alt="logo de Platina Assessoria" class="header__logo" onclick="openLink('index.html', 0)">
 
@@ -78,11 +80,11 @@
 
             <div class="nav__container" id="nav-container">                
 
-                <div class="nav__item">
+                <div class="nav__item" onclick="nav()">
                     <a href="#sobre-financas">Finanças</a>
                 </div>
 
-                <div class="nav__item">
+                <div class="nav__item" onclick="nav()">
                     <a href="#sobre">Sobre</a>
                 </div>
 
@@ -165,6 +167,10 @@
         </div>
     </section>
 
+
+    <div class="topo" id="topo" onclick="window.scrollTo(0, 0)"></div>
+    <span class="topo__text">Voltar ao topo</span>
+    <div class="topo__hide"></div>
 
     <hr class="section__hr">
 
@@ -252,6 +258,7 @@
 
     <script>
 
+        // Função que auxilia a navegação
         function openLink(link, blank) {
             if (blank) {
                 window.open(link, '_blank');

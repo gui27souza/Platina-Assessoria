@@ -56,6 +56,8 @@ and (min-width: 900px) {
     align-items: center;
 
     position: relative;
+
+    z-index: 1;
 }
 
 .hero-content {
@@ -64,6 +66,8 @@ and (min-width: 900px) {
     display: flex;
     flex-flow: column;
     align-items: center;
+
+    z-index: 1;
 }
 
 .hero-content__title {
