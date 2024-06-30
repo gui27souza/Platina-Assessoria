@@ -1,7 +1,8 @@
 const header_element = document.getElementById('header')
-const hero_element = document.getElementById('hero-banner')
 
-function heroHeight() {
+function heroHeight(id) {
+
+    const hero_element = document.getElementById(id)
 
     if (window.innerWidth < 900) return
 
@@ -10,4 +11,10 @@ function heroHeight() {
     hero_element.style.height = `calc(100vh - ${header_height})`
 }
 
-window.addEventListener('load', heroHeight())
+if (document.getElementById('hero-banner')) {
+    window.addEventListener('load', heroHeight('hero-banner'))
+}
+
+if (document.getElementById('hero-banner-cursos')) {
+    window.addEventListener('load', heroHeight('hero-banner-cursos'))
+}
