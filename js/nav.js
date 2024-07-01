@@ -39,12 +39,21 @@
     const all_nav_items = document.querySelectorAll('.nav__item')
     let contador = 0
 
-    for (let i = 0; i < all_nav_items.length; i++) {
-        contador++
+    function navItemsContador() {
+   
+        for (let i = 0; i < all_nav_items.length; i++) {
+            contador++
+        }
+        
+        if (window.innerWidth >= 600) {
+            menu.style.gridTemplateColumns = `repeat(${contador}, 1fr)`
+        }
+
+        contador = 0
     }
 
-    if (window.innerWidth >= 600) {
-        menu.style.gridTemplateColumns = `repeat(${contador}, 1fr)`
-    }
+    window.addEventListener('load', navItemsContador)
+
+    window.addEventListener('resize', navItemsContador)
 
 // 

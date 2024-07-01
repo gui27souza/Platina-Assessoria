@@ -57,6 +57,8 @@
     flex-flow: column;
     gap: var(--inner-gap);
 
+    z-index: -1;
+
     position: relative;
 }
 

@@ -9,24 +9,56 @@
 
     let is_sobre_text_visible = 0
 
+    let sobre_height_before
+    let sobre_text_height
+    let section_column_gap
+
 // 
 
-// Apenas se a seção sobre_text for recolhível, ou seja, até telas médias
-if (window.innerWidth < 900) {
+window.addEventListener('load', () => {
 
-    // Altura da seção sobre_text, que está escondida
-    var sobre_text_height = sobre_text.offsetHeight
-    // Altura total da seção sobre menos a altura de sobre_text
-    var sobre_height_before = sobre_section.offsetHeight - sobre_text_height
+    // Apenas se a seção sobre_text for recolhível, ou seja, até telas médias
+    if (window.innerWidth < 900) {
 
-    // Valor real do gap da seção sobre
-    const computed_style_sobre_section = window.getComputedStyle(sobre_section)
-    var section_column_gap = parseFloat(computed_style_sobre_section.getPropertyValue('row-gap'))
+        // Altura da seção sobre_text, que está escondida
+        sobre_text_height = sobre_text.offsetHeight
+        // Altura total da seção sobre menos a altura de sobre_text
+        sobre_height_before = sobre_section.offsetHeight - sobre_text_height
 
-    // Define um valor inicial de altura para seção para que a transição possa ser aplicada
-    sobre_section.style.height = sobre_height_before - section_column_gap + 'px'
-    
-}
+        // Valor real do gap da seção sobre
+        const computed_style_sobre_section = window.getComputedStyle(sobre_section)
+        section_column_gap = parseFloat(computed_style_sobre_section.getPropertyValue('row-gap'))
+
+        // Define um valor inicial de altura para seção para que a transição possa ser aplicada
+        sobre_section.style.height = sobre_height_before - section_column_gap + 'px'
+        
+    }
+
+})
+
+window.addEventListener('resize', () => {
+
+    sobre_section.style.height = 'unset'
+
+    // Apenas se a seção sobre_text for recolhível, ou seja, até telas médias
+    if (window.innerWidth < 900) {
+
+        // Altura da seção sobre_text, que está escondida
+        sobre_text_height = sobre_text.offsetHeight
+        // Altura total da seção sobre menos a altura de sobre_text
+        sobre_height_before = sobre_section.offsetHeight - sobre_text_height
+
+        // Valor real do gap da seção sobre
+        const computed_style_sobre_section = window.getComputedStyle(sobre_section)
+        section_column_gap = parseFloat(computed_style_sobre_section.getPropertyValue('row-gap'))
+
+        // Define um valor inicial de altura para seção para que a transição possa ser aplicada
+        sobre_section.style.height = sobre_height_before - section_column_gap + 'px'
+        
+    }
+
+})
+
  
 
 // Função que ativa a seção escondida, chamada ao clicar na seção 'open-sobre__text'
