@@ -23,10 +23,11 @@
     <link rel="stylesheet" href="css/section css/footer.css">
 </head>
 <body>
-
-    <div class="topo" id="topo" onclick="window.scrollTo(0, 0)"></div>
-    <span class="topo__text">Voltar ao topo</span>
-    <!-- <div class="topo__hide"></div> -->
+    
+    <div class="topo__click" onclick="window.scrollTo(0, 0)">
+        <div class="topo" id="topo"></div>
+        <span class="topo__text">Voltar ao topo</span>
+    </div>
     
     <header class="header" id="header">
 
@@ -87,19 +88,23 @@
             <div class="nav__container" id="nav-container">                
 
                 <div class="nav__item">
-                    <a href="http://127.0.0.1:5500/index.html">Home</a>
+                    <a href="http://127.0.0.1:5500/index.html" class="nav__item__a" id="nav-item-a-home">Home</a>
                 </div>
 
                 <div class="nav__item" onclick="nav()">
-                    <a href="#sobre-financas">Finanças</a>
+                    <a href="html/cursos.html" class="nav__item__a">Cursos</a>
                 </div>
 
                 <div class="nav__item" onclick="nav()">
-                    <a href="#sobre">Sobre</a>
+                    <a href="#sobre-financas" class="nav__item__a">Finanças</a>
                 </div>
 
                 <div class="nav__item" onclick="nav()">
-                    <a href="#contato">Contato</a>
+                    <a href="#sobre" class="nav__item__a">Sobre</a>
+                </div>
+
+                <div class="nav__item" onclick="nav()">
+                    <a href="#contato" class="nav__item__a">Contato</a>
                 </div>
 
             </div>
@@ -231,35 +236,25 @@
             Entre em contato
         </h1>
 
-        <div class="contato__email">
-            <span>
-                platinaassessoria@gmail.com
-            </span>
-        </div>
+        <span class="contato__email">
+            platinaassessoria@gmail.com
+        </span>
 
-        <div class="contato__telefone">
-            <span>
-                +99 099 999999999
-            </span>
-        </div>
+        <span class="contato__telefone">
+            +99 099 999999999
+        </span>
 
-        <div class="contato__rede-social">
-            <span>
-                LinkedIn: <a href=""></a>
-            </span>
-        </div>
+        <span class="contato__rede-social">
+            LinkedIn: <a href="">PlatinaAssessoria</a>
+        </span>
 
-        <div class="contato__rede-social">
-            <span>
-                Facebook: <a href=""></a>
-            </span>
-        </div>
+        <span class="contato__rede-social">
+            Facebook: <a href="">PlatinAssessoria</a>
+        </span>
 
-        <div class="contato__rede-social">
-            <span>
-                Instagram: <a href=""></a>
-            </span>
-        </div>
+        <span class="contato__rede-social">
+            Instagram: <a href="">@platina_assessoria</a>
+        </span>
 
 
     </div>
@@ -287,6 +282,7 @@
 
     </script>
 
+    <script src="js/style.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/sobre.js"></script>

@@ -7,6 +7,18 @@ html {
     scroll-behavior: smooth;
 }
 
+.topo__click {
+    display: block;
+
+    height: calc(var(--topo-size)*1.5);
+    width: calc(var(--topo-size)*1.5);
+
+    position: fixed;
+    bottom: calc(var(--topo-distance)/1.5);
+    right: calc(var(--topo-distance)/1.5);
+
+}
+
 .topo {
     background-color: var(--main-blue);
 
@@ -100,7 +112,7 @@ and (min-width: 1200px) {
         overflow: visible;
     }
 
-    .topo:hover {
+    .topo__click:hover .topo {
         transform: rotate(360deg);
     }
 
@@ -127,22 +139,10 @@ and (min-width: 1200px) {
         transition: right .6s ease;
     }
 
-    .topo:hover ~ .topo__text {
+    .topo__click:hover .topo__text {
         right: calc(var(--topo-distance) + var(--topo-size) - 2rem);
     }
 
-    .topo__hide {
-        display: block;
-
-        background-color: white;
-
-        height: var(--topo-size);
-        width: 6rem;
-
-        position: fixed;
-        bottom: var(--topo-distance);
-        right: 0;
-    }
 }
 
 

@@ -5,4 +5,18 @@
 .contato {
     height: 50vh;
     padding: var(--section-padding);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.contato__title {
+    font-size: var(--h1-font-size);
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+
+.contato__title ~ span {
+    font-size: var(--p-font-size);
 }

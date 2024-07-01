@@ -77,8 +77,6 @@ and (min-width: 900px) {
 }
 
 .hero-content__title {
-    border-radius: 1rem;
-    
     font-size: 1.6rem;
     font-weight: 400;
     padding: 1rem;
@@ -102,8 +100,6 @@ and (min-width: 900px) {
     text-decoration: none;
 
     padding: 1rem 2rem;
-
-    border-radius: 99rem;
 }
 
 

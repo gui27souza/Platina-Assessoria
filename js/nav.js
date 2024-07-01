@@ -1,41 +1,50 @@
-var nav_is_open = 0
+// 
 
-const menu_decoration = document.getElementById('nav-menu__decoration')
-const menu = document.getElementById('nav-container')
+    var nav_is_open = 0
 
-function nav() {
+    const menu_decoration = document.getElementById('nav-menu__decoration')
+    const menu = document.getElementById('nav-container')
 
-    if (window.innerWidth >= 600) return
+    function nav() {
 
-    if (!nav_is_open) {
+        if (window.innerWidth >= 600) return
 
-        menu_decoration.style.transform = 'rotate(0deg)'
+        if (!nav_is_open) {
 
-        menu.style.display = 'flex'
-        menu.style.top = menu_decoration.offsetHeight + "px"
+            menu_decoration.style.transform = 'rotate(0deg)'
 
-        nav_is_open = 1
+            menu.style.display = 'flex'
+            menu.style.top = menu_decoration.offsetHeight + "px"
 
-    } else {
+            nav_is_open = 1
 
-        menu_decoration.style.transform = 'rotate(90deg)'
+        } else {
 
-        menu.style.display = 'none'
+            menu_decoration.style.transform = 'rotate(90deg)'
 
-        nav_is_open = 0
+            menu.style.display = 'none'
+
+            nav_is_open = 0
+
+        }
 
     }
 
-}
+// 
 
 
-const all_nav_items = document.getElementsByClassName('nav__item')
-let contador = 0
 
-for (let i = 0; i < all_nav_items.length; i++) {
-    contador++
-}
+// Auxilia na organização dos botões da nav em telas maiores
 
-if (window.innerWidth >= 600) {
-    menu.style.gridTemplateColumns = `repeat(${contador}, 1fr)`
-}
+    const all_nav_items = document.querySelectorAll('.nav__item')
+    let contador = 0
+
+    for (let i = 0; i < all_nav_items.length; i++) {
+        contador++
+    }
+
+    if (window.innerWidth >= 600) {
+        menu.style.gridTemplateColumns = `repeat(${contador}, 1fr)`
+    }
+
+// 
