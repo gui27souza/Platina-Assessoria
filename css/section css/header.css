@@ -74,16 +74,51 @@
 
 .header__tel {
     width: 100%;
+    height: 100%;
 
     padding: 1rem;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.header__tel__link {
+    position: absolute;
+    top: 0;
+
+    display: block;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 4;
 }
 
 .header__tel__span {
     font-size: 2rem;
     font-weight: 400;
+
+    position: relative;
+}
+
+.header__tel__span::after {
+    content: "";
+
+    background-color: var(--main-white);
+
+    display: block;
+
+    height: calc(var(--p-font-size)/2);
+    width: calc(var(--p-font-size)/2);
+
+    clip-path: polygon(100% 0, 0 0, 50% 75%);
+
+    position: absolute;
+    right: -2rem;
+    top: 1.4rem;
 }
 
 .header__link {
