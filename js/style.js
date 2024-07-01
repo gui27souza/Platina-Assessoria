@@ -32,8 +32,7 @@
         clipPath('.hero-content__title', 0, Infinity)
     }
     
-    window.addEventListener('load', applyClipPaths)
-    
+    window.addEventListener('load', applyClipPaths)    
     window.addEventListener('resize', applyClipPaths)
 
 // 
