@@ -26,3 +26,8 @@
 
     border: none;
 }
+
+p {
+    text-align: justify;
+    hyphens: auto;
+}

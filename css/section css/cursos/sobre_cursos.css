@@ -1,0 +1,118 @@
+.sobre-cursos {
+    display: flex;
+    flex-flow: column;
+
+    padding: var(--section-padding);
+    gap: var(--section-gap);
+}
+
+.sobre-cursos__title {
+    align-self: center;
+}
+
+.sobre-cursos__title h1 {
+    font-size: var(--h1-font-size);
+}
+
+.sobre-cursos__item {
+    display: flex;
+    flex-flow: column;
+
+    font-size: var(--p-font-size);
+
+    gap: var(--inner-gap);
+}
+
+.sobre-cursos__item__img {
+    display: none;
+}
+
+
+
+@media screen
+and (min-width: 300px) {
+    
+    .sobre-cursos__item__img {
+        display: unset;
+        object-fit: cover;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 400px) {
+    
+    
+
+}
+
+
+
+@media screen
+and (min-width: 600px) {
+    
+    .sobre-cursos__item {
+        flex-flow: row;
+
+        height: 16rem;
+    }
+
+    .sobre-cursos__item__img {
+        width: 40%;
+        
+        z-index: -1;
+    }
+
+    .sobre-cursos__item__p {
+        flex-grow: 1;
+
+        align-self: center;
+    }
+
+    .sobre-cursos__item:nth-of-type(odd) .sobre-cursos__item__p {
+        order: 1;
+    }
+
+    .sobre-cursos__item:nth-of-type(odd) .sobre-cursos__item__img {
+        order: 2;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 900px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 1200px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 1500px) {
+    
+    
+
+}
+
+
+
+@media screen
+and (min-width: 1800px) {
+    
+
+
+}

@@ -4,8 +4,12 @@
         
         const all_items = document.querySelectorAll(class_name)
 
-        if (window.innerWidth < min_window_width) return
-        if (window.innerWidth > max_window_width) return
+        if ( window.innerWidth < min_window_width || 
+             window.innerWidth > max_window_width) {
+            
+                for (let item of all_items) item.style.clipPath = 'unset'
+                return
+            }
 
         if (all_items.length === 0) return
 
@@ -30,6 +34,7 @@
     function applyClipPaths() {
         clipPath('.nav__item__a', 600, Infinity)
         clipPath('.hero-content__title', 0, Infinity)
+        clipPath('.sobre-cursos__item__img', 600, Infinity)
     }
     
     window.addEventListener('load', applyClipPaths)    
