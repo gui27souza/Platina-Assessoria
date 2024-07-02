@@ -1,0 +1,29 @@
+.cursos {
+    padding: var(--section-padding);
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: var(--section-gap);
+}
+
+.cursos__title {
+    font-size: var(--h1-font-size);
+}
+
+.cursos__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--inner-gap);
+}
+
+.cursos__item > * {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.cursos__item {
+    display: flex;
+    flex-flow: column;
+    gap: calc(var(--inner-gap)*.5);
+}
