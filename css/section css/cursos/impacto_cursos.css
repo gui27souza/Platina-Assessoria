@@ -1,0 +1,111 @@
+.impacto-cursos {
+    padding: var(--section-padding);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--section-gap);
+}
+
+.impacto-cursos__title {
+    font-size: var(--h1-font-size);
+    text-align: center;
+}
+
+.impacto-cursos__sub {
+    font-size: var(--h2-font-size);
+    font-weight: 400;
+}
+
+.impacto-cursos__wrapper {
+    display: flex;
+    flex-flow: column;
+    gap: var(--inner-gap);
+}
+
+.impacto-cursos__item {
+    font-size: var(--p-font-size);
+    text-align: justify;
+    hyphens: auto;
+}
+.impacto-cursos__item::marker {
+    
+}
+
+.impacto-cursos__item::after {
+    content: "";
+
+    height: 1rem;
+    width: 1rem;
+
+    background-color: var(--main-blue);
+}
+
+
+@media screen
+and (min-width: 300px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 400px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 600px) {
+    
+    
+
+}
+
+
+
+@media screen
+and (min-width: 900px) {
+    
+    .impacto-cursos__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1200px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 1500px) {
+    
+    .impacto-cursos__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1800px) {
+    
+
+
+}

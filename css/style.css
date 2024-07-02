@@ -22,7 +22,7 @@
     width: calc(100% - 2*var(--section-padding));
     height: 1px;
 
-    margin: auto;
+    margin: var(--inner-padding) auto 0;
 
     border: none;
 }
