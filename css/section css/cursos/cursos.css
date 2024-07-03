@@ -13,17 +13,106 @@
 
 .cursos__wrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
     gap: var(--inner-gap);
+
+    overflow: hidden;
+
+    transition: height 1s ease;
 }
 
 .cursos__item > * {
-    text-align: justify;
+    /* text-align: justify; */
     hyphens: auto;
+    font-size: var(--p-font-size);
 }
 
 .cursos__item {
-    display: flex;
-    flex-flow: column;
-    gap: calc(var(--inner-gap)*.5);
+    display: grid;
+    gap: calc(var(--inner-gap)*.2);
+    border: 2px solid black;
+
+    padding: var(--inner-padding);
+}
+
+.cursos__item__link {
+    align-self: end;
+    justify-self: center;
+}
+
+.cursos__show-all {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+
+    font-size: var(--p-font-size);
+    text-align: center;
+
+    width: 100%;
+}
+
+
+@media screen
+and (min-width: 300px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 400px) {
+    
+    
+
+}
+
+
+
+@media screen
+and (min-width: 600px) {
+    
+    .cursos__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 900px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 1200px) {
+    
+    
+
+}
+
+
+
+@media screen
+and (min-width: 1500px) {
+    
+    .cursos__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1800px) {
+    
+
+
 }

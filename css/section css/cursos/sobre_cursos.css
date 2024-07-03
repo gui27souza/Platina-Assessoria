@@ -1,3 +1,27 @@
+@media screen
+and (min-width: 600px) {
+    
+    .sobre-cursos__item {
+        background-color: var(--main-blue);
+    }
+
+    .sobre-cursos__item__background {
+        background-color: var(--main-blue);
+    }
+
+    .sobre-cursos__item__p {
+        background-color: var(--main-blue);
+        color: var(--main-white);
+    }
+
+}
+
+
+
+
+
+
+
 .sobre-cursos {
     display: flex;
     flex-flow: column;
@@ -73,18 +97,12 @@ and (min-width: 600px) {
 
         height: 16rem;
 
-        padding: .2rem;
-
-        background-color: var(--main-blue);
-
+        padding: .4rem;
     }
 
     .sobre-cursos__item__background {
         display: unset;
-    
-        background-color: white;
-        padding: -2px;
-    
+
         position: absolute;
     
         top: 1%;
@@ -108,8 +126,6 @@ and (min-width: 600px) {
         height: 100%;
 
         padding: var(--section-padding);
-
-        background-color: white;
 
         display: flex;
         justify-content: center;

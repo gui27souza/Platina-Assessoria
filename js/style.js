@@ -65,7 +65,7 @@
 
         clipPath('.sobre-cursos__item', 600, Infinity)
         clipPath('.sobre-cursos__item__background', 600, Infinity)
-        clipPath('.sobre-cursos__item__img', 600, Infinity)
+        clipPath('.sobre-cursos__item__img', 0, Infinity)
         clipPath('.r-side', 600, Infinity, 'down')
         clipPath('.l-side', 600, Infinity, 'up')
     }

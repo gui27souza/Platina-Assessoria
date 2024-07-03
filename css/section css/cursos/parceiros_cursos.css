@@ -1,0 +1,20 @@
+.parceiros-cursos {
+    padding: var(--section-padding);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--section-gap);
+}
+
+.parceiros-cursos__title {
+    font-size: calc(var(--h1-font-size)*.6);
+}
+
+.parceiros-cursos__wrapper {
+    display: flex;
+    flex-flow: column;
+}
+
+.parceiros-cursos__item {
+    font-size: var(--p-font-size);
+}
