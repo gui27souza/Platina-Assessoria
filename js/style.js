@@ -1,6 +1,6 @@
 // Função que adiciona estilo personalizado à determinada classe
 
-    function clipPath(class_name, min_window_width, max_window_width, side = 'both') {
+    function clipPath(class_name, min_window_width, max_window_width, side = 'both', fraction = '3') {
         
         const all_items = document.querySelectorAll(class_name)
 
@@ -20,12 +20,12 @@
             case 'both':
                 for (let item of all_items) {                    
                     item.style.clipPath = `polygon(
-                        ${item_height/3}px 0, 
+                        ${item_height / fraction}px 0, 
                         100% 0, 
-                        100% ${2*item_height/3}px, 
-                        ${item_width - item_height/3}px 100%, 
+                        100% ${(fraction-1)*item_height / fraction}px, 
+                        ${item_width - item_height / fraction}px 100%, 
                         0 100%, 
-                        0 ${item_height/3}px
+                        0 ${item_height / fraction}px
                     )`                        
                 }
             break
@@ -33,11 +33,11 @@
             case 'up':
                 for (let item of all_items) {                    
                     item.style.clipPath = `polygon(
-                        ${item_height/3}px 0, 
+                        ${item_height / fraction}px 0, 
                         100% 0, 
                         100% 100%, 
                         0 100%, 
-                        0 ${item_height/3}px
+                        0 ${item_height / fraction}px
                     )`                        
                 }
             break
@@ -47,8 +47,8 @@
                     item.style.clipPath = `polygon(
                         0 0, 
                         100% 0, 
-                        100% ${2*item_height/3}px, 
-                        ${item_width - item_height/3}px 100%, 
+                        100% ${(fraction-1)*item_height / fraction}px, 
+                        ${item_width - item_height / fraction}px 100%, 
                         0 100%
                     )`                        
                 }
@@ -68,6 +68,8 @@
         clipPath('.sobre-cursos__item__img', 0, Infinity)
         clipPath('.r-side', 600, Infinity, 'down')
         clipPath('.l-side', 600, Infinity, 'up')
+
+        clipPath('.cursos__item', 0, Infinity, 'both', 6)
     }
     
     window.addEventListener('load', applyClipPaths)    

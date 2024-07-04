@@ -3,3 +3,5 @@
 - limpar arquivos css
 
 - scroll to não esta preciso
+
+- em cursos.js arrumar window.addEventlistener('resize', ...)
