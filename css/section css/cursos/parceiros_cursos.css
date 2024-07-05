@@ -3,18 +3,160 @@
 
     display: flex;
     flex-flow: column;
-    gap: var(--section-gap);
+    gap: calc(var(--section-gap)*.75);
 }
 
 .parceiros-cursos__title {
-    font-size: calc(var(--h1-font-size)*.6);
+    font-weight: 500;
+    font-size: calc(var(--p-font-size)*1);
+    text-align: center;
 }
 
 .parceiros-cursos__wrapper {
+    flex-grow: 1;
+
     display: flex;
     flex-flow: column;
+    justify-content: space-between;
 }
 
 .parceiros-cursos__item {
     font-size: var(--p-font-size);
+    text-align: justify;
+    hyphens: auto;
+
+    padding: var(--inner-gap) 0 ;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.parceiros-cursos__item:first-of-type {
+    padding-top: 0;
+}
+
+.parceiros-cursos__item:last-of-type {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+
+@media screen
+and (min-width: 300px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 400px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 600px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 900px) {
+    
+    .parceiros-cursos__item {
+        padding: calc(var(--inner-gap)*.75) 0 ;
+    }
+    
+    .parceiros-cursos__item:first-of-type {
+        padding-top: 0;
+    }
+    
+    .parceiros-cursos__item:last-of-type {
+        padding-bottom: 0;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1200px) {
+    
+    .parceiros-cursos__item {
+        font-size: 2.4rem;
+        padding: calc(var(--inner-gap)*.5) 0 ;
+    }
+    
+    .parceiros-cursos__item:first-of-type {
+        padding-top: 0;
+    }
+    
+    .parceiros-cursos__item:last-of-type {
+        padding-bottom: 0;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1500px) {
+    
+    .parceiros-cursos__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+    .parceiros-cursos__item {
+        padding: var(--inner-padding);
+        border-bottom: unset;    
+
+        font-size: 2.2rem;
+
+        border: 1px solid rgba(0, 0, 0, 0.7);
+    }
+    
+    .parceiros-cursos__item:first-of-type {
+        border-top: 0;
+        padding-top: var(--inner-padding);
+    }
+    
+    .parceiros-cursos__item:nth-of-type(2) {
+        border-top: none;
+    }
+
+    .parceiros-cursos__item:nth-of-type(odd) {
+        border-left: none;
+        text-align: right;
+    }    
+
+    .parceiros-cursos__item:nth-of-type(7) {
+        border-bottom: 0;
+    }
+
+    .parceiros-cursos__item:nth-of-type(even) {
+        border-right: none;
+    }
+    
+    .parceiros-cursos__item:last-of-type {
+        border-bottom: none;
+        padding-bottom: var(--inner-padding);
+    }
+}
+
+
+
+@media screen
+and (min-width: 1800px) {
+    
+
+
 }

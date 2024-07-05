@@ -69,7 +69,11 @@
         clipPath('.r-side', 600, Infinity, 'down')
         clipPath('.l-side', 600, Infinity, 'up')
 
-        clipPath('.cursos__item', 0, Infinity, 'both', 6)
+        clipPath('.cursos__item', 0, Infinity, 'both', 8)
+        
+        clipPath('.impacto-cursos__item', 0, Infinity, 'both', 8)
+        clipPath('.impacto-cursos__item__span', 0, Infinity, 'both', 8)
+        
     }
     
     window.addEventListener('load', applyClipPaths)    
