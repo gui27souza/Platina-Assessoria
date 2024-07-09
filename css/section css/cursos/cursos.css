@@ -353,6 +353,7 @@ and (min-width: 1800px) {
     
     .cursos__item__description span {
         font-size: 2.2rem;
+        line-height: 1.05;
     }
 
 }

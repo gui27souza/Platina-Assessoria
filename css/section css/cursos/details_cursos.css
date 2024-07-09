@@ -13,7 +13,9 @@
 
     text-align: center;
     font-weight: 500;
-    font-size: calc(var(--h1-font-size)*.75);
+    font-size: 1.6rem;
+
+    max-width: 120rem;
 }
 
 .details-cursos__wrapper {
@@ -24,18 +26,25 @@
 }
 
 .details-cursos__item {
-    font-size: calc(var(--p-font-size));
+    background-color: var(--light-white);
+    font-size: 1.4rem;
     text-align: justify;
     hyphens: auto;
 
-    /* padding: calc(var(--inner-padding)*.3); */
+    padding: var(--inner-padding);
 }
 
 
 @media screen
 and (min-width: 300px) {
     
+    .details-cursos__title {
+        font-size: 1.8rem;
+    }
 
+    .details-cursos__item {
+        font-size: 1.6rem;
+    }
 
 }
 
@@ -44,7 +53,13 @@ and (min-width: 300px) {
 @media screen
 and (min-width: 400px) {
 
-    
+    .details-cursos__title {
+        font-size: 2rem;
+    }
+
+    .details-cursos__item {
+        font-size: 1.8rem;
+    }
 
 }
 
@@ -53,7 +68,13 @@ and (min-width: 400px) {
 @media screen
 and (min-width: 600px) {
     
-    
+    .details-cursos__title {
+        font-size: 2.2rem;
+    }
+
+    .details-cursos__item {
+        font-size: 2rem;
+    }
 
 }
 
@@ -73,7 +94,13 @@ and (min-width: 900px) {
 @media screen
 and (min-width: 1200px) {
     
+    .details-cursos__title {
+        font-size: 2.6rem;
+    }
 
+    .details-cursos__item {
+        font-size: 2.2rem;
+    }
 
 }
 
@@ -82,9 +109,7 @@ and (min-width: 1200px) {
 @media screen
 and (min-width: 1500px) {
     
-    .details-cursos__wrapper {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    
 
 
 }
@@ -94,6 +119,16 @@ and (min-width: 1500px) {
 @media screen
 and (min-width: 1800px) {
     
+    .details-cursos__wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
+    .details-cursos__title {
+        font-size: 2.8rem;
+    }
+
+    .details-cursos__item {
+        font-size: calc(2.4rem + .1vw);
+    }
 
 }

@@ -70,6 +70,8 @@
         clipPath('.l-side', 600, Infinity, 'up')
 
         clipPath('.cursos__item', 0, Infinity, 'both', 8)
+
+        clipPath('.details-cursos__item ', 0, Infinity, 'both', 8)
         
         clipPath('.impacto-cursos__item', 0, Infinity, 'both', 8)
         clipPath('.impacto-cursos__item__span', 0, Infinity, 'both', 8)

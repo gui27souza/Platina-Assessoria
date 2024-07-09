@@ -15,7 +15,7 @@
 }
 
 .impacto-cursos__sub {
-    font-size: var(--p-font-size);
+    font-size: 1.8rem;
     font-weight: 400;
 }
 
@@ -27,12 +27,12 @@
 }
 
 .impacto-cursos__item {
-    background-color: rgba(0, 0, 136, 0.555);
-    font-size: var(--p-font-size);
+    background-color: var(--light-blue);
+    font-size: 1.4rem;
     text-align: justify;
     hyphens: auto;
 
-    padding: calc(var(--inner-padding)*.3);
+    padding: calc(var(--inner-padding)*.15);
 
     display: flex;
     justify-content: center;
@@ -46,13 +46,23 @@
     height: 100%;
     width: 100%;
     padding: calc(var(--inner-padding)*.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 @media screen
 and (min-width: 300px) {
     
+    .impacto-cursos__sub {
+        font-size: 2rem;
+    }
 
+    .impacto-cursos__item {
+        font-size: 1.6rem;
+    }
 
 }
 
@@ -61,7 +71,13 @@ and (min-width: 300px) {
 @media screen
 and (min-width: 400px) {
     
+    .impacto-cursos__sub {
+        font-size: 2.2rem;
+    }
 
+    .impacto-cursos__item {
+        font-size: 1.8rem;
+    }
 
 }
 
@@ -70,7 +86,13 @@ and (min-width: 400px) {
 @media screen
 and (min-width: 600px) {
     
-    
+    .impacto-cursos__sub {
+        font-size: 2.4rem;
+    }
+
+    .impacto-cursos__item {
+        font-size: 2rem;
+    }
 
 }
 
@@ -92,7 +114,13 @@ and (min-width: 900px) {
 @media screen
 and (min-width: 1200px) {
     
+    .impacto-cursos__sub {
+        font-size: 2.6rem;
+    }
 
+    .impacto-cursos__item {
+        font-size: 2.2rem;
+    }
 
 }
 
@@ -101,12 +129,7 @@ and (min-width: 1200px) {
 @media screen
 and (min-width: 1500px) {
     
-    .impacto-cursos__wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
+    
 }
 
 
@@ -114,6 +137,18 @@ and (min-width: 1500px) {
 @media screen
 and (min-width: 1800px) {
     
+    .impacto-cursos__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 
+    .impacto-cursos__sub {
+        font-size: 2.8rem;
+    }
+
+    .impacto-cursos__item {
+        font-size: 2.4rem;
+    }
 
 }
