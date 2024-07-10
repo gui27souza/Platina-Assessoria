@@ -59,23 +59,33 @@
 
     function applyClipPaths() {
         
-        clipPath('.nav__item__a', 600, Infinity)
+        // General
+            clipPath('.nav__item__a', 600, Infinity)
 
-        clipPath('.hero-content__title', 0, Infinity)
+            clipPath('.hero-content__title', 0, Infinity)
+            clipPath('.hero-content__link', 0, Infinity, 'both', 4)
+        // 
 
-        clipPath('.sobre-cursos__item', 600, Infinity)
-        clipPath('.sobre-cursos__item__background', 600, Infinity)
-        clipPath('.sobre-cursos__item__img', 0, Infinity)
-        clipPath('.r-side', 600, Infinity, 'down')
-        clipPath('.l-side', 600, Infinity, 'up')
+        // Cursos
+            clipPath('.sobre-cursos__item', 600, Infinity)
+            clipPath('.sobre-cursos__item__background', 600, Infinity)
+            clipPath('.sobre-cursos__item__img', 0, Infinity)
+            clipPath('.r-side', 600, Infinity, 'down')
+            clipPath('.l-side', 600, Infinity, 'up')
 
-        clipPath('.cursos__item', 0, Infinity, 'both', 8)
+            clipPath('.cursos__item', 0, Infinity, 'both', 8)
 
-        clipPath('.details-cursos__item ', 0, Infinity, 'both', 8)
+            clipPath('.details-cursos__item', 0, Infinity, 'both', 8)
+            
+            clipPath('.impacto-cursos__item', 0, Infinity, 'both', 8)
+            clipPath('.impacto-cursos__item__span', 0, Infinity, 'both', 8)
+        // 
         
-        clipPath('.impacto-cursos__item', 0, Infinity, 'both', 8)
-        clipPath('.impacto-cursos__item__span', 0, Infinity, 'both', 8)
-        
+        // Missao
+            clipPath('.section-consequencias__item', 0, Infinity, 'both', 6)
+
+            clipPath('.section-objetivo__clip-path', 0, Infinity, 'both', 10)
+        // 
     }
     
     window.addEventListener('load', applyClipPaths)    

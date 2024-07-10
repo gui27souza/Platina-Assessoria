@@ -1,0 +1,23 @@
+.section-dividas {
+    padding: var(--section-padding);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--section-gap);
+}
+
+.section-dividas__title {
+    font-size: calc(var(--h1-font-size)*1);
+    align-self: center;
+    text-align: center;
+}
+
+.section-dividas__wrapper {
+    display: flex;
+    flex-flow: column;
+    gap: var(--inner-gap);
+}
+
+.section-dividas__item__span {
+    font-size: var(--p-font-size);
+}

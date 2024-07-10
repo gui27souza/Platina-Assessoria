@@ -5,3 +5,9 @@
 - scroll to não esta preciso
 
 - em cursos.js arrumar window.addEventlistener('resize', ...)
+
+
+- arrumar nav
+    - dividir em dois: um geral e outro especifico da pagina
+
+- estilizar seção 'contato'

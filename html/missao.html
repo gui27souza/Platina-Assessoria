@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Platina Assessoria</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/var.css">
+    
+    <link rel="stylesheet" href="../css/geral/header.css">
+    <link rel="stylesheet" href="../css/geral/nav.css">
+    <link rel="stylesheet" href="../css/geral/hero.css">
+    <link rel="stylesheet" href="../css/geral/contato.css">
+    <link rel="stylesheet" href="../css/geral/footer.css">
+    <link rel="stylesheet" href="../css/geral/topo.css">
+
+    <link rel="stylesheet" href="../css/section css/missao/dividas.css">
+    <link rel="stylesheet" href="../css/section css/missao/consequencias.css">
+    <link rel="stylesheet" href="../css/section css/missao/objetivo.css">
+    <link rel="stylesheet" href="../css/section css/missao/beneficios.css">
+
+</head>
+<body>
+    
+    <div class="topo__click" onclick="window.scrollTo(0, 0)">
+        <div class="topo" id="topo"></div>
+        <span class="topo__text">Voltar ao topo</span>
+    </div>
+    
+    <header class="header" id="header">
+
+        <div class="header__wrapper">
+
+            <img src="../media/svg/brand/platina_financas_logo.svg" alt="logo de Platina Assessoria" class="header__logo" onclick="openLink('index.html', 0)">
+
+            <div class="header__tel">
+                <a href="#contato" class="header__tel__link"></a>
+                <span class="header__tel__span">
+                    99 99999-9999
+                </span>
+            </div>
+
+
+            <div class="header__link">
+
+                <svg class="header__link__btn" onclick="openLink('https://www.linkedin.com/', 1)"
+                        xmlns="http://www.w3.org/2000/svg"  
+                        viewBox="0 0 50 50" 
+                        width="100px" 
+                        height="100px">
+                        <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/>
+                </svg>
+
+                <svg class="header__link__btn" onclick="openLink('https://facebook.com/', 1)"
+                        xmlns="http://www.w3.org/2000/svg"  
+                        viewBox="0 0 50 50" 
+                        width="100px" 
+                        height="100px">
+                        <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/>
+                </svg>
+
+                <svg class="header__link__btn" onclick="openLink('https://instagram.com/', 1)"
+                        xmlns="http://www.w3.org/2000/svg"  
+                        viewBox="0 0 50 50" 
+                        width="100px" 
+                        height="100px">
+                        <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"/>
+                </svg>
+
+            </div>
+            
+        </div>
+
+    </header>
+
+
+
+
+    <nav class="nav" id="nav">
+
+        <div class="nav__wrapper">
+
+            <div class="nav-menu" id="nav-menu" onclick="nav()">
+                <span>Menu</span><span id="nav-menu__decoration">III</span>
+            </div>
+
+            <div class="nav__container" id="nav-container">                
+
+                <div class="nav__item">
+                    <a href="http://127.0.0.1:5500/index.html" class="nav__item__a" id="nav-item-a-home">Home</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <section class="hero" id="hero">
+
+        <div class="hero-banner" id="hero-banner-missao"></div>
+
+        <div class="hero-content">
+            
+            <h1 class="hero-content__title">
+                Nossa Missão
+            </h1>
+            
+            <div class="hero-content__link">
+                <a href="#">Saiba Mais</a>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+
+
+    <section class="section-dividas">
+
+        <h1 class="section-dividas__title">
+            Quando as dívidas se tornam um desafio
+        </h1>
+
+        <div class="section-dividas__wrapper">
+            
+            <div class="section-dividas__item">
+
+                <span class="section-dividas__item__span">
+                    Impactam negativamente na saúde física, causando sintomas como taquicardia e tremores, além de afetar a saúde psicológica com ansiedade, estresse, depressão e insônia.
+                </span>
+
+            </div>
+            
+            <div class="section-dividas__item">
+
+                <span class="section-dividas__item__span">
+                    Podem prejudicar relacionamentos familiares, de amizade ou conjugais, aumentando a irritabilidade e provocando conflitos que provocam um ciclo de desconforto generalizado.
+                </span>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="section-consequencias">
+
+        <h1 class="section-consequencias__title">
+            A pessoa endividada:
+        </h1>
+
+        <div class="section-consequencias__wrapper">
+            
+            <div class="section-consequencias__item">
+
+                <span class="section-consequencias__item__span">
+                    Pode lidar com o problema buscando uma fuga em vícios, como bebidas alcoólicas.
+                </span>
+
+            </div>
+            
+            <div class="section-consequencias__item">
+
+                <span class="section-consequencias__item__span">
+                    Enfrenta dificuldades para realizar sonhos, não mantém um bom desempenho no trabalho ou nos estudos, e falha em alcançar objetivos.
+                </span>
+
+            </div>
+            
+            <div class="section-consequencias__item">
+
+                <span class="section-consequencias__item__span">
+                    Muitas vezes, acaba se endividando mais e mais na esperança de sair da dificuldade
+                </span>
+
+            </div>
+            
+            <div class="section-consequencias__item">
+
+                <span class="section-consequencias__item__span">
+                    Pode se afastar de pessoas importantes em sua vida e enfrentar desafios ainda maiores estando sozinha.
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="section-objetivo">
+        
+        <h1 class="section-objetivo__title">
+            Nosso objetivo
+        </h1>
+
+        <div class="section-objetivo__wrapper">
+            
+            <div class="section-objetivo__item">
+
+                <span class="section-objetivo__item__span">
+                    Nosso objetivo é cumprir o que define a OCDE (Organização para a Cooperação e Desenvolvimento Econômico) como educação financeira, ou seja:
+                </span>
+
+            </div>
+            
+            <div class="section-objetivo__item section-objetivo__clip-path">
+
+                <span class="section-objetivo__item__span">
+                    "Ensinar consumidores e investidores a melhorem sua compreensão sobre produtos, conceitos e riscos financeiros, e obterem informação e instrução, para desenvolverem habilidades e confiança, de modo a ficarem mais cientes sobre os riscos e oportunidades financeiras, para fazerem escolhas mais conscientes e, assim, adotarem ações para melhorar seu bem-estar."
+                </span>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="section-beneficios">
+
+        <h1 class="section-beneficios__title">
+            Beneficios para a empresa que promove educação financeira
+        </h1>
+
+        <h2 class="section-beneficios__sub">
+            Os principais benefícios para a empresa que promove a educação financeira incluem:
+        </h2>
+
+        <div class="section-beneficios__wrapper">
+            
+            <div class="section-beneficios__item">
+
+                <span class="section-beneficios__item__span">
+                    Melhoria da saúde mental e física dos colaboradores.
+                </span>
+
+            </div>
+            
+            <div class="section-beneficios__item">
+
+                <span class="section-beneficios__item__span">
+                    Aumento da motivação e consequente produtividade.
+                </span>
+
+            </div>
+            
+            <div class="section-beneficios__item">
+
+                <span class="section-beneficios__item__span">
+                    Redução de faltas e atrasos.
+                </span>
+
+            </div>
+            
+            <div class="section-beneficios__item">
+
+                <span class="section-beneficios__item__span">
+                    Diminuição de pedidos de adiantamentos salariais ou empréstimos.
+                </span>
+
+            </div>
+            
+            <div class="section-beneficios__item">
+
+                <span class="section-beneficios__item__span">
+                    Melhoria do clima organizacional.
+                </span>
+
+            </div>
+            
+            <div class="section-beneficios__item">
+
+                <span class="section-beneficios__item__span">
+                    Aumento do engajamento dos funcionários.
+                </span>
+
+            </div>
+            
+            <div class="section-beneficios__item">
+
+                <span class="section-beneficios__item__span">
+                    Redução da rotatividade de pessoal.
+                </span>
+
+            </div>
+            
+            <div class="section-beneficios__item">
+
+                <span class="section-beneficios__item__span">
+                    Atração de talentos de alta qualidade.
+                </span>
+
+            </div>
+            
+            <div class="section-beneficios__item">
+
+                <span class="section-beneficios__item__span">
+                    Redução das despesas relacionadas à rotatividade de funcionários.
+                </span>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+
+    <div class="contato" id="contato">
+        
+        <h1 class="contato__title">
+            Entre em contato
+        </h1>
+
+        <span class="contato__email">
+            platinaassessoria@gmail.com
+        </span>
+
+        <span class="contato__telefone">
+            +99 099 999999999
+        </span>
+
+        <span class="contato__rede-social">
+            LinkedIn: <a href="">PlatinaAssessoria</a>
+        </span>
+
+        <span class="contato__rede-social">
+            Facebook: <a href="">PlatinAssessoria</a>
+        </span>
+
+        <span class="contato__rede-social">
+            Instagram: <a href="">@platina_assessoria</a>
+        </span>
+
+
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <span>All rights reserved to 272727@</span>
+    </footer>
+
+
+
+
+    <script>
+
+        // Função que auxilia a navegação
+        function openLink(link, blank) {
+            if (blank) {
+                window.open(link, '_blank');
+            } else {
+                window.location.href = link
+            }
+        }
+
+    </script>
+
+    <script src="../js/style.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/hero.js"></script>
+</body>
+</html>
