@@ -3,20 +3,155 @@
 }
 
 .contato {
-    height: 50vh;
-    padding: var(--section-padding);
+    
+}
 
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+.contato-wrapper {
+    padding: calc(var(--section-padding)*.6) var(--section-padding);
+
+    display: grid;
+
+    margin: auto;
+}
+
+.contato-wrapper > * {
+    display: block;
 }
 
 .contato__title {
     font-size: var(--h1-font-size);
     border-bottom: 1px solid black;
-    width: fit-content;
 }
 
 .contato__title ~ span {
-    font-size: var(--p-font-size);
+    font-size: 1.4rem;
+}
+
+
+
+@media screen
+and (min-width: 300px) {
+    
+    .contato__title ~ span {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 400px) {
+    
+    .contato__title ~ span {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 600px) {
+    
+    .contato-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        justify-content: space-between;
+        gap: calc(var(--inner-gap)*.5) calc(var(--inner-gap));
+    }
+
+    .contato__title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        width: fit-content;
+    }
+    .contato__email {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        display: flex;
+        align-items: center;
+    }
+    .contato__telefone {
+        grid-column: 1 / 2;
+        grid-row: 3 / -1;
+
+        display: flex;
+        align-items: center;
+    }
+    .contato__linkedin {
+        grid-column: 2 /-1;
+        grid-row: 1 /2;
+
+        display: flex;
+        align-items: center;
+    }
+    .contato__facebook {
+        grid-column: 2 /-1;
+        grid-row: 2 / 3;
+
+        display: flex;
+        align-items: center;
+    }
+    .contato__instagram {
+        grid-column: 2 /-1;
+        grid-row: 3 / -1;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .contato__title ~ span {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 900px) {
+    
+    
+
+}
+
+
+
+@media screen
+and (min-width: 1200px) {
+
+    .contato__title ~ span {
+        font-size: 2.2rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1500px) {
+    
+    .contato-wrapper {
+        width: 75%;
+    }
+    
+    .contato__rede-social {
+        justify-content: right;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1800px) {
+    
+    .contato__title ~ span {
+        font-size: calc(2.4rem + .1vw);
+    }
+
 }
