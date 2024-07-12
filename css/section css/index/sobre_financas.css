@@ -42,6 +42,7 @@ and (min-width: 300px) {
 
     .sobre-financas__text__item__img {
         display: unset;
+        height: max-content;
     }
     
 }
@@ -81,8 +82,14 @@ and (min-width: 600px) {
     
     .sobre-financas__text__item__img {
         width: 40%;
+        height: 100%;
 
         object-fit: cover;
+    }
+
+    .sobre-financas__text__item:nth-of-type(2)
+    .sobre-financas__text__item__img{
+        order: 2;
     }
     
     .sobre-financas__text__item__p {
@@ -95,10 +102,6 @@ and (min-width: 600px) {
 
 @media screen
 and (min-width: 900px) {
-    
-    .sobre-financas {
-        height: calc(100vh - 9rem);
-    }
     
     .sobre-financas__text {
         flex-grow: 1;
@@ -143,10 +146,6 @@ and (min-width: 1200px) {
 @media screen
 and (min-width: 1500px) {
     
-    .sobre-financas {
-        height: unset;
-    }
-    
     .sobre-financas__text {
         flex-flow: row;
         justify-content: space-evenly;
@@ -163,10 +162,8 @@ and (min-width: 1500px) {
         max-height: 70rem;
         width: 50%;
         max-width: 50rem;
-        
-        border-radius: 5rem;
-        outline: 1px solid rgba(0, 0, 0, 0.6);
-        overflow: hidden;
+
+        background-color: var(--light-blue-l);
     }
     
     .sobre-financas__text__item__img {
@@ -174,6 +171,11 @@ and (min-width: 1500px) {
         height: 27rem;
 
         flex-grow: unset;
+    }
+
+    .sobre-financas__text__item:nth-of-type(2)
+    .sobre-financas__text__item__img{
+        order: unset;
     }
     
     .sobre-financas__text__item__p {

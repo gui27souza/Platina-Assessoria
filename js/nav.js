@@ -42,33 +42,3 @@
     }
 
 // 
-
-
-
-// Função que auxilia na organização dos botões da nav em telas maiores
-
-    // Elementos
-    const all_nav_items = document.querySelectorAll('.nav__item')    
-
-    function navItemsContador() {
-        
-        // Variáveis
-        let contador = 0
-
-        // Conta quantos botões existem
-        for (let i = 0; i < all_nav_items.length; i++) {
-            contador++
-        }
-        
-        // Ajusta aa grid de acordo com o número de botões
-        if (window.innerWidth >= 600) {
-            menu.style.gridTemplateColumns = `repeat(${contador}, 1fr)`
-        }
-
-    }
-
-    // Ajuste dinâmico
-    window.addEventListener('load', navItemsContador)
-    window.addEventListener('resize', navItemsContador)
-
-// 

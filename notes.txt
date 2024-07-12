@@ -2,12 +2,10 @@
 
 - limpar arquivos css
 
-- scroll to não esta preciso
+- arrumar texto footer
 
-- em cursos.js arrumar window.addEventlistener('resize', ...)
+- resumo josi oliveira em home e foto
 
+- ajustar seção contato
 
-- arrumar nav
-    - dividir em dois: um geral e outro especifico da pagina
-
-- estilizar seção 'contato'
+- ajustar cursos/links

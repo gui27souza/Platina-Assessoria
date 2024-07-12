@@ -20,4 +20,9 @@
 
 .section-dividas__item__span {
     font-size: var(--p-font-size);
+    hyphens: auto;
+    text-align: justify;
+
+    display: block;
+    width: 100%;
 }
