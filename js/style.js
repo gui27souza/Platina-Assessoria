@@ -66,6 +66,11 @@
             clipPath('.hero-content__link', 0, Infinity, 'both', 4)
         // 
 
+        // Home
+            clipPath('.sobre-financas__text__item__img', 0, 1500,'both', 6)
+            clipPath('.sobre-financas__text__item', 1500, Infinity,'both', 10)
+        // 
+
         // Cursos
             clipPath('.sobre-cursos__item', 600, Infinity)
             clipPath('.sobre-cursos__item__background', 600, Infinity)

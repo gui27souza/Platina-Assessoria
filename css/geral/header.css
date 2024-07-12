@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
 
-    z-index: 3;
+    z-index: 5;
 }
 
 .header__wrapper {    
@@ -70,6 +70,8 @@
     padding: 2rem;
 
     border-bottom: 2px solid var(--main-white);
+
+    display: none;
 }
 
 .header__tel {
@@ -83,6 +85,8 @@
     align-items: center;
 
     position: relative;
+
+    order: 2;
 }
 
 .header__tel__link {
@@ -137,8 +141,6 @@
     max-height: 4rem;
 }
 
-
-
 @media screen
 and (min-width: 300px) {
     
@@ -178,11 +180,17 @@ and (min-width: 600px) {
     }
 
     .header__logo {
+        display: unset;
+
         border-bottom: unset;
 
         padding: 1rem;
 
         max-width: 24rem;
+    }
+
+    .header__tel {
+        order: unset;
     }
 
     .header__tel__span {
