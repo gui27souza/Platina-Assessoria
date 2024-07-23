@@ -63,7 +63,7 @@ and (min-width: 600px) {
 }
 
 .nav-menu {
-    font-size: 2.2rem;
+    font-size: 2rem;
 
     width: 100%;
 
@@ -124,7 +124,7 @@ and (min-width: 300px) {
     
     .nav-menu,
     .nav__item {
-        font-size: 2.4rem;
+        font-size: 3rem;
     }
 
 }
