@@ -9,3 +9,6 @@
 - ajustar seção contato
 
 - ajustar cursos/links
+
+
+- mudar hero home - mudar o preto e branco
