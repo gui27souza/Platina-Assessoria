@@ -67,8 +67,8 @@
         // 
 
         // Home
-            clipPath('.sobre-financas__text__item__img', 0, 1500,'both', 6)
-            clipPath('.sobre-financas__text__item', 1500, Infinity,'both', 10)
+            clipPath('.sobre-assessoria__text__item__img', 0, 1500,'both', 6)
+            clipPath('.sobre-assessoria__text__item', 1500, Infinity,'both', 10)
         // 
 
         // Cursos

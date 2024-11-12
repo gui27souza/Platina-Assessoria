@@ -1,4 +1,4 @@
-.sobre-financas {
+.sobre-assessoria {
     display: flex;
     flex-flow: column;
     gap: var(--section-gap);
@@ -6,32 +6,32 @@
     padding: var(--section-padding);
 }
 
-.sobre-financas__title {
+.sobre-assessoria__title {
     font-size: var(--h1-font-size);
     text-align: center;
 }
 
-.sobre-financas__text {
+.sobre-assessoria__text {
     display: flex;
     flex-flow: column;
     gap: 1.6rem;
 }
 
-.sobre-financas__text__item {
+.sobre-assessoria__text__item {
 
 }
 
-.sobre-financas__text__item__img {
+.sobre-assessoria__text__item__img {
     display: none;
 }
 
-.sobre-financas__text__item__p {
+.sobre-assessoria__text__item__p {
     font-size: var(--p-font-size);
     text-align: justify;
     hyphens: auto;
 }
 
-.sobre-financas__text__item__p b {
+.sobre-assessoria__text__item__p b {
     font-weight: 600;
 }
 
@@ -40,7 +40,7 @@
 @media screen
 and (min-width: 300px) {
 
-    .sobre-financas__text__item__img {
+    .sobre-assessoria__text__item__img {
         display: unset;
         height: max-content;
     }
@@ -52,13 +52,13 @@ and (min-width: 300px) {
 @media screen
 and (min-width: 400px) {
 
-    .sobre-financas__text {
+    .sobre-assessoria__text {
         display: flex;
         flex-flow: column;
         gap: 4rem;
     }
 
-    .sobre-financas__text__item {
+    .sobre-assessoria__text__item {
         display: flex;
         flex-flow: column;
         gap: 1.6rem;
@@ -71,28 +71,28 @@ and (min-width: 400px) {
 @media screen
 and (min-width: 600px) {
     
-    .sobre-financas__title {
+    .sobre-assessoria__title {
         
     }
     
-    .sobre-financas__text__item {
+    .sobre-assessoria__text__item {
         flex-flow: row;
         height: 22rem;
     }
     
-    .sobre-financas__text__item__img {
+    .sobre-assessoria__text__item__img {
         width: 40%;
         height: 100%;
 
         object-fit: cover;
     }
 
-    .sobre-financas__text__item:nth-of-type(2)
-    .sobre-financas__text__item__img{
+    .sobre-assessoria__text__item:nth-of-type(2)
+    .sobre-assessoria__text__item__img{
         order: 2;
     }
     
-    .sobre-financas__text__item__p {
+    .sobre-assessoria__text__item__p {
         line-height: 1.2;
     }
     
@@ -103,21 +103,21 @@ and (min-width: 600px) {
 @media screen
 and (min-width: 900px) {
     
-    .sobre-financas__text {
+    .sobre-assessoria__text {
         flex-grow: 1;
         justify-content: space-between;
     }
     
-    .sobre-financas__text__item {
+    .sobre-assessoria__text__item {
         flex-grow: 1;
     }
     
-    .sobre-financas__text__item__img {
+    .sobre-assessoria__text__item__img {
         width: 40%;
         flex-grow: 1;
     }
     
-    .sobre-financas__text__item__p {
+    .sobre-assessoria__text__item__p {
         width: 60%;
     }
     
@@ -128,11 +128,11 @@ and (min-width: 900px) {
 @media screen
 and (min-width: 1200px) {
     
-    .sobre-financas__text {
+    .sobre-assessoria__text {
         flex-grow: 1;
     }
     
-    .sobre-financas__text__item {
+    .sobre-assessoria__text__item {
         flex-grow: 1;
 
         justify-content: space-between;
@@ -146,12 +146,12 @@ and (min-width: 1200px) {
 @media screen
 and (min-width: 1500px) {
     
-    .sobre-financas__text {
+    .sobre-assessoria__text {
         flex-flow: row;
         justify-content: space-evenly;
     }
     
-    .sobre-financas__text__item {
+    .sobre-assessoria__text__item {
         flex-flow: column;
         justify-content: flex-start;
         gap: 0;
@@ -166,19 +166,19 @@ and (min-width: 1500px) {
         background-color: var(--light-blue-l);
     }
     
-    .sobre-financas__text__item__img {
+    .sobre-assessoria__text__item__img {
         width: 100%;
         height: 27rem;
 
         flex-grow: unset;
     }
 
-    .sobre-financas__text__item:nth-of-type(2)
-    .sobre-financas__text__item__img{
+    .sobre-assessoria__text__item:nth-of-type(2)
+    .sobre-assessoria__text__item__img{
         order: unset;
     }
     
-    .sobre-financas__text__item__p {
+    .sobre-assessoria__text__item__p {
         width: 100%;
         height: 100%;
         min-height: 36rem;
@@ -193,15 +193,15 @@ and (min-width: 1500px) {
 @media screen
 and (min-width: 1800px) {
 
-    .sobre-financas__text__item {
+    .sobre-assessoria__text__item {
         max-width: 75rem;
     }
     
-    .sobre-financas__text__item__img {
+    .sobre-assessoria__text__item__img {
         height: 40rem;
     }
     
-    .sobre-financas__text__item__p {
+    .sobre-assessoria__text__item__p {
         padding: 3rem;
     }
 
