@@ -49,7 +49,7 @@
 
         // Atribuição da imagem de acordo com o banner específico e tamanho
         document.getElementById(hero_id).style.backgroundImage = 
-        `url(${not_index}media/images/hero_banner/${hero_id}/${hero_id}_${size}.jpg)`
+        `url(${not_index}assets/images/hero_banner/${hero_id}/${hero_id}_${size}.jpg)`
 
         // Ajuste de altura da seção
         heroHeight(hero_id)
