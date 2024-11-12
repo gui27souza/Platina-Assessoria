@@ -239,6 +239,8 @@ and (min-width: 1800px) {
     .sobre__img{
         grid-row: 2 / -1;
         grid-column: 2 / -1;
+
+        object-position: 50% 30%;
     }
     
     .sobre__text{
